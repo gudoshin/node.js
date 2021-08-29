@@ -1,4 +1,4 @@
-import mongoose from "../../common/mongo";
+const mongoose = require( "../../common/mongo");
 
 const Schema = mongoose.Schema;
 
@@ -10,12 +10,23 @@ const schema = new Schema({
 	},
 	surname: {
 		type: String,
-		required: true,
+		default: null,
 		trim: true
 	},
 	middleName: {
 		type: String,
 		default: null,
+		trim: true
+	},
+	login: {
+		type: String,
+		unique: true,
+		required: true,
+		trim: true
+	},
+	password: {
+		type: String,
+		required: true,
 		trim: true
 	}
 } , {timestamps: true});

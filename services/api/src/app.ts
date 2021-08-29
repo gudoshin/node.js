@@ -1,8 +1,9 @@
 import express from 'express';
+import user from './resources/user/user.router';
 const app = express();
 const router = express.Router();
-import user from './resources/users/user.router'
 
+app.use(express.json());
 app.use('/api/v1/', router);
 router.get('/', (req, res) => {
 	res.send('hello');
