@@ -1,5 +1,5 @@
 const PORT = 3000;
-const app = require('./app');
+import app from './app';
 
 app.listen(PORT, () =>
     console.log(`App is running on port ${PORT}`)

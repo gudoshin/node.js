@@ -4,7 +4,6 @@ services:
     image: node:14-alpine
     volumes:
       - ./services/api:/app
-      - ./volumes/uploads:/app/uploads
     working_dir: /app    
     environment: 
       MONGO_AUTH_DB: admin
