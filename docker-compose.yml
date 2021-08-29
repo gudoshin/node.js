@@ -4,8 +4,9 @@ services:
     image: node:14-alpine
     volumes:
       - ./services/api:/app
-    working_dir: /app    
-    environment: 
+    working_dir: /app   
+    environment:
+      PORT: 3000 
       MONGO_AUTH_DB: admin
       MONGO_URI: mongodb://mongo/myproject
       MONGO_USER: root
