@@ -5,6 +5,8 @@
     "bcrypt": "^5.0.1",
     "express": "^4.17.1",
     "mongoose": "^6.0.2",
+    "mysql2": "^2.3.3-rc.0",
+    "sequelize": "^6.9.0",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.2"
   },
